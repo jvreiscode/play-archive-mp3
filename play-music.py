@@ -1,20 +1,22 @@
+#import pygame 
 import pygame
 
-# Inicializa o Pygame
+#inicialize the library
 pygame.init()
 
-# Inicializa o mixer
+#inicialize mix
 pygame.mixer.init()
 
-# Carrega o arquivo MP3
-pygame.mixer.music.load(r"C:\Users\jvsoa\OneDrive\Documents\Programação\Faculdade\arquivosPy\Sapo-atumalaca-_.mp3")
+#Loading archive MP3
+pygame.mixer.music.load(r"Sapo-atumalaca-_.mp3")
 
-# Toca a música
+#Play music
 pygame.mixer.music.play()
 
-# Mantém o programa rodando enquanto a música toca
+#Keep the application running while the music is playing
 while pygame.mixer.music.get_busy():
     pygame.time.Clock().tick(10)
 
-# Encerra o Pygame
+#Endly Pygame
 pygame.quit()
+
